@@ -15,7 +15,7 @@ public class ProjectTask {
     private Long id;
 
     // Used to find individual project tasks
-    @Column(updatable = false)
+    @Column(updatable = false, unique = true)
     private String projectSequence;
 
     @NotBlank(message = "Please include a project summary")
